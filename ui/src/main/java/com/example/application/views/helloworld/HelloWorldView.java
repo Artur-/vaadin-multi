@@ -1,6 +1,8 @@
 package com.example.application.views.helloworld;
 
 import com.example.application.views.MainLayout;
+import com.example.multi.MyComponent;
+
 import com.vaadin.flow.component.Key;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.notification.Notification;
@@ -26,6 +28,7 @@ public class HelloWorldView extends HorizontalLayout {
         });
         sayHello.addClickShortcut(Key.ENTER);
 
+        add(new MyComponent());
         setMargin(true);
         setVerticalComponentAlignment(Alignment.END, name, sayHello);
 
